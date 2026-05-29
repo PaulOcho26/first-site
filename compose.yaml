@@ -1,0 +1,8 @@
+services:
+  first-site-app:
+    image: php:8.2-apache
+    container_name: first_site_legacy
+    ports:
+      - "8003:80"
+    volumes:
+      - .:/var/www/html
